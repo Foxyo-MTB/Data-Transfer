@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m0t-7Z-2FA">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Person-->
+        <scene sceneID="OTe-Sx-pxO">
+            <objects>
+                <tableViewController id="e6s-Nm-v8O" customClass="HumanTableViewController" customModule="Homework_tableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="f15-SJ-hfp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="pD2-aK-TEa">
+                                <rect key="frame" x="0.0" y="50" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pD2-aK-TEa" id="BpZ-PC-EYN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="e6s-Nm-v8O" id="vDE-Tb-3LI"/>
+                            <outlet property="delegate" destination="e6s-Nm-v8O" id="Vsy-Vi-Cjp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Person" id="mSA-2n-8Cm"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fn7-uL-FUv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298" y="-16"/>
+        </scene>
+        <!--HumanDetailViewController-->
+        <scene sceneID="c1A-7H-Hw6">
+            <objects>
+                <viewController storyboardIdentifier="Detail" title="HumanDetailViewController" modalPresentationStyle="fullScreen" id="mL9-Oq-xcu" customClass="HumanDetailViewController" customModule="Homework_tableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Ah-Ob-nRO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efK-hc-qAC">
+                                <rect key="frame" x="165" y="40" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9at-lM-Ckp">
+                                <rect key="frame" x="30" y="115" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQN-IL-rZ4">
+                                <rect key="frame" x="30" y="166" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25F-q3-wBA">
+                                <rect key="frame" x="106" y="115" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8u-V7-jjP">
+                                <rect key="frame" x="106" y="166" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tjH-fe-pUt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tjH-fe-pUt" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="25F-q3-wBA" secondAttribute="trailing" symbolic="YES" id="1zJ-69-8Nr"/>
+                            <constraint firstItem="d8u-V7-jjP" firstAttribute="leading" secondItem="sQN-IL-rZ4" secondAttribute="trailing" constant="23" id="4j1-Ml-20N"/>
+                            <constraint firstItem="9at-lM-Ckp" firstAttribute="leading" secondItem="tjH-fe-pUt" secondAttribute="leading" constant="30" id="Ay5-Fz-c5v"/>
+                            <constraint firstItem="efK-hc-qAC" firstAttribute="centerX" secondItem="7Ah-Ob-nRO" secondAttribute="centerX" id="CBg-nw-hXa"/>
+                            <constraint firstItem="sQN-IL-rZ4" firstAttribute="leading" secondItem="tjH-fe-pUt" secondAttribute="leading" constant="30" id="RXk-CX-ye0"/>
+                            <constraint firstItem="sQN-IL-rZ4" firstAttribute="top" secondItem="9at-lM-Ckp" secondAttribute="bottom" constant="30" id="T8c-Ix-kfL"/>
+                            <constraint firstItem="tjH-fe-pUt" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="d8u-V7-jjP" secondAttribute="trailing" symbolic="YES" id="dfS-t4-oru"/>
+                            <constraint firstItem="25F-q3-wBA" firstAttribute="leading" secondItem="9at-lM-Ckp" secondAttribute="trailing" constant="30" id="gl9-XV-Uti"/>
+                            <constraint firstItem="9at-lM-Ckp" firstAttribute="top" secondItem="tjH-fe-pUt" secondAttribute="top" constant="115" id="iHt-m7-TVz"/>
+                            <constraint firstItem="d8u-V7-jjP" firstAttribute="top" secondItem="25F-q3-wBA" secondAttribute="bottom" constant="30" id="iQd-MY-TAY"/>
+                            <constraint firstItem="25F-q3-wBA" firstAttribute="top" secondItem="tjH-fe-pUt" secondAttribute="top" constant="115" id="lXX-sZ-iqr"/>
+                            <constraint firstItem="efK-hc-qAC" firstAttribute="top" secondItem="tjH-fe-pUt" secondAttribute="top" constant="40" id="wa4-0M-zks"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Name" id="Pvc-Ia-gug"/>
+                    <connections>
+                        <outlet property="emailOutlet" destination="25F-q3-wBA" id="zEY-bD-Iry"/>
+                        <outlet property="humanDetailTitleOutlet" destination="Pvc-Ia-gug" id="WR0-jH-ond"/>
+                        <outlet property="nameOutlet" destination="efK-hc-qAC" id="sVU-1D-Abw"/>
+                        <outlet property="phoneOutlet" destination="d8u-V7-jjP" id="7dE-ey-be7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWe-SX-uZp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="-17"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RDs-nC-HZ0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m0t-7Z-2FA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ElV-Sp-u5U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e6s-Nm-v8O" kind="relationship" relationship="rootViewController" id="lGd-WI-QLM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EfY-Mf-Y4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-486" y="-16"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

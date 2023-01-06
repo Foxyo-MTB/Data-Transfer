@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		74021B2728CA1729001BB571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74021B2628CA1729001BB571 /* AppDelegate.swift */; };
 		74021B2928CA1729001BB571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74021B2828CA1729001BB571 /* SceneDelegate.swift */; };
-		74021B2B28CA1729001BB571 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74021B2A28CA1729001BB571 /* ViewController.swift */; };
 		74021B2E28CA1729001BB571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74021B2C28CA1729001BB571 /* Main.storyboard */; };
 		74021B3028CA172A001BB571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74021B2F28CA172A001BB571 /* Assets.xcassets */; };
 		74021B3328CA172A001BB571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74021B3128CA172A001BB571 /* LaunchScreen.storyboard */; };
+		74021B3E28CA1AA7001BB571 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74021B3D28CA1AA7001BB571 /* PersonModel.swift */; };
+		74021B4428CA263E001BB571 /* HumanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74021B4328CA263E001BB571 /* HumanTableViewController.swift */; };
+		74021B4628CA51C9001BB571 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74021B4528CA51C9001BB571 /* DataManager.swift */; };
+		74C2D16A28CF6CD400EB69A5 /* HumanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2D16928CF6CD400EB69A5 /* HumanDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74021B2328CA1729001BB571 /* Homework_tableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework_tableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74021B2628CA1729001BB571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74021B2828CA1729001BB571 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74021B2A28CA1729001BB571 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74021B2D28CA1729001BB571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74021B2F28CA172A001BB571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74021B3228CA172A001BB571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74021B3428CA172A001BB571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74021B3D28CA1AA7001BB571 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		74021B4328CA263E001BB571 /* HumanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanTableViewController.swift; sourceTree = "<group>"; };
+		74021B4528CA51C9001BB571 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		74C2D16928CF6CD400EB69A5 /* HumanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				74021B2628CA1729001BB571 /* AppDelegate.swift */,
 				74021B2828CA1729001BB571 /* SceneDelegate.swift */,
-				74021B2A28CA1729001BB571 /* ViewController.swift */,
-				74021B2C28CA1729001BB571 /* Main.storyboard */,
+				74021B3C28CA18F3001BB571 /* Models */,
+				74021B3B28CA18ED001BB571 /* Controllers */,
+				74021B3A28CA18E3001BB571 /* Views */,
 				74021B2F28CA172A001BB571 /* Assets.xcassets */,
 				74021B3128CA172A001BB571 /* LaunchScreen.storyboard */,
 				74021B3428CA172A001BB571 /* Info.plist */,
 			);
 			path = Homework_tableView;
+			sourceTree = "<group>";
+		};
+		74021B3A28CA18E3001BB571 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74021B2C28CA1729001BB571 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		74021B3B28CA18ED001BB571 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				74021B4328CA263E001BB571 /* HumanTableViewController.swift */,
+				74C2D16928CF6CD400EB69A5 /* HumanDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		74021B3C28CA18F3001BB571 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74021B3D28CA1AA7001BB571 /* PersonModel.swift */,
+				74021B4528CA51C9001BB571 /* DataManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74021B2B28CA1729001BB571 /* ViewController.swift in Sources */,
+				74021B3E28CA1AA7001BB571 /* PersonModel.swift in Sources */,
+				74C2D16A28CF6CD400EB69A5 /* HumanDetailViewController.swift in Sources */,
+				74021B4628CA51C9001BB571 /* DataManager.swift in Sources */,
 				74021B2728CA1729001BB571 /* AppDelegate.swift in Sources */,
+				74021B4428CA263E001BB571 /* HumanTableViewController.swift in Sources */,
 				74021B2928CA1729001BB571 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
